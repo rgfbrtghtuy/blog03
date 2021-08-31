@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.upyunblog.tk</id>
-    <title>山居秋暝</title>
-    <updated>2021-08-31T07:18:24.234Z</updated>
+    <id>https://blog.ilovebabybus.ml</id>
+    <title>宝宝巴士</title>
+    <updated>2021-08-31T13:45:44.390Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.upyunblog.tk"/>
-    <link rel="self" href="https://blog.upyunblog.tk/atom.xml"/>
-    <subtitle>空山新雨后，天气晚来秋。</subtitle>
-    <logo>https://blog.upyunblog.tk/images/avatar.png</logo>
-    <icon>https://blog.upyunblog.tk/favicon.ico</icon>
-    <rights>All rights reserved 2021, 山居秋暝</rights>
+    <link rel="alternate" href="https://blog.ilovebabybus.ml"/>
+    <link rel="self" href="https://blog.ilovebabybus.ml/atom.xml"/>
+    <subtitle>童心未泯</subtitle>
+    <logo>https://blog.ilovebabybus.ml/images/avatar.png</logo>
+    <icon>https://blog.ilovebabybus.ml/favicon.ico</icon>
+    <rights>All rights reserved 2021, 宝宝巴士</rights>
     <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://blog.upyunblog.tk/post/hello-gridea/</id>
-        <link href="https://blog.upyunblog.tk/post/hello-gridea/">
+        <title type="html"><![CDATA[Scrapy教程（一）：Scrapy基本介绍]]></title>
+        <id>https://blog.ilovebabybus.ml/post/scrapy-jiao-cheng-yi-scrapy-ji-ben-jie-shao/</id>
+        <link href="https://blog.ilovebabybus.ml/post/scrapy-jiao-cheng-yi-scrapy-ji-ben-jie-shao/">
         </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+        <updated>2021-08-31T05:15:53.000Z</updated>
+        <content type="html"><![CDATA[<p>Scrapy是一个框架化的异步爬虫工具。</p>
+<h2 id="1安装">（1）安装</h2>
+<p><code>pip install Scrapy</code><br>
+设置代理：<code>set https_proxy=http://127.0.0.1:10809</code></p>
+<h2 id="2结构介绍">（2）结构介绍</h2>
+<p><img src="https://pic4.zhimg.com/80/v2-9cb3e4ca04d0fdc25f98a0cae718e8a3_720w.jpg" alt="" loading="lazy"><br>
+<font color=#FF000 ><strong>Scrapy Engine</strong></font><font color=#006600 ><strong>(引擎)</strong></font>：调度整个系统的数据流向，负责各组件之间通信，类似十字路的交警。<br>
+<font color=#FF000 ><strong>Scheduler</strong></font><font color=#006600 ><strong>(调度器)</strong></font>:排列Request请求<br>
+<font color=#FF000 ><strong>Downloader</strong></font><font color=#006600 ><strong>(下载器)</strong></font>:负责下载网页，获取Responses响应<br>
+<font color=#FF000 ><strong>Spider</strong></font><font color=#006600 ><strong>(爬虫)</strong></font>:从Responses中提取数据，返回类型必须为Request（新的请求），BaseItem（Scrapy中定义的类型字典的数据类型），dict（字典），None。<br>
+<font color=#FF000 ><strong>Item Pipeline</strong></font><font color=#006600 ><strong>(管道)</strong></font>：负责接收Item，决定该如何处理（存储，输出，分析等），可以有多个，按照优先级生效（离引擎的距离）<br>
+<font color=#FF000 ><strong>Downloader Middlewares</strong></font><font color=#006600 ><strong>(下载中间件)</strong></font>:位于引擎和下载器之间，可以处理这一道路上的Request请求，Responses响应（非必须）<br>
+<font color=#FF000 ><strong>Spider Middlewares</strong></font><font color=#006600 ><strong>(爬虫中间件)</strong></font>：位于引擎和爬虫中间，可以处理这一道路上的Request请求，Responses响应（非必须），不处理Item（交由管道处理）</p>
+<h2 id="3常用命令">（3）常用命令</h2>
+<p>1.<code>scrapy startproject &lt;name&gt;</code>：新建项目<br>
+2.<code>scrapy genspider &lt;name&gt; &lt;domain&gt;</code>：创建一个爬虫<br>
+3.<code>scrapy crawl &lt;spider&gt;</code>：运行爬虫<br>
+4.<code>scrapy list</code>：列出爬虫</p>
 ]]></content>
     </entry>
 </feed>
